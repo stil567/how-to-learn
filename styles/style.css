@@ -1,3 +1,9 @@
+*,
+*:before,
+*:after {
+    box-sizing:border-box;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -7,25 +13,378 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+
+    color: #000000;
 }
 
+/*header*/
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #f2f2f2;
   /* выше установили ограничения для секции */
 }
+/*логотип яндекс практикум*/
+.logo {
+  background-image:url("../images/logo_place_header.svg");
+  height:32px;
+  width:183px;
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+}
+/*свойства логотипа яндекс практикум в header*/
+.logo__header {
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  left: 64px;
+}
+/*заголовок Научиться учиться*/
+.title {
+  width: 730px;
+  font-size: 102px;
+  display: block;
+  line-height: 96px;
+  font-weight: bold;
+  margin-left: 64px;
+}
+/*подзоголовок*/
+.subtitle {
+  width: 388px;
+  position: absolute;
+  z-index: 1;
+  left: 64px;
+  bottom: 30px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+/*ссылка "узнать"*/
+.subtitle-link{
+    text-decoration:none;
+}
+/*илюстрация "опять двойка"*/
+.main-illustration{
+    position:absolute;
+    z-index:1;
+    bottom:0px;
+    right:0px;
+    width:765px;
+    height:608px;
+}
+/*квадрат*/
+.square-pic {
+  position: absolute;
+  z-index: 0;
+  right: 0px;
+  top: 64px;
+  background-color: #2f80ed;
+  height:568px;
+  width:568px;
+}
+
+/*description*/
+.description{
+    display: flex;
+    justify-content: center;
+}
+.description-indent{
+    margin: 100px 0;
+}
+.two-colummns{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.brief{
+    width: 175px;
+    text-decoration: none;
+    line-height:1.2;
+    font-size: 18px;
+    font-weight: normal;
+}
+.main-text{
+    width: 80%;
+    min-width: 784px;
+}
+.paragraph{
+    margin: 0;
+    line-height:34px;
+    font-size: 24px;
+    font-weight: normal;
+}
+.paragraph-indent{
+    margin: 30px 0;
+}
+.span-accent{
+    font-weight: 700;
+}
+
+/*digits*/
+.digits{
+margin: 100px auto;
+}
+.section-title{
+    width: 60%;
+    line-height:69px;
+    font-size: 60px;
+    font-weight:700;
+    text-align: center;
+
+}
+.section-title-indent{
+    margin: 0 auto 20px;
+}
+.section-subtitle{
+    width: 60%;
+    line-height:34px;
+    font-size: 24px;
+    font-weight:normal;
+    text-align: center;
+}
+
+.section-subtitle-indent{
+    margin: auto;
+}
+
+.table{
+    width: 1100px;
+    margin: auto;
+}
+
+.table-row{
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.table-row-indent{
+    margin: 60px 0;
+}
+
+.table__cell{
+    width: 250px;
+}
+
+.heading{
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.heading-indent{
+    margin-bottom: 20px;
+}
+
+.text{
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.text-indent{
+    margin-top: 20px;
+
+}
+
+/*feiman*/
+
+.feinman{
+    position: relative;
+    background-color:#f2f2f2;
+    height:790px;
+}
+
+.feinman-text{
+    position: absolute;
+    z-index: 1;
+    top:100px;
+    margin: 0 auto;
+
+    right: 0;
+    left: 0;
+}
+
+.title-feinman{
+    width: 648px;
+    line-height:1.15;
+    font-size:120px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.subtitle-feinman{
+    line-height: 51px;
+    font-size:36px;
+    font-weight: normal;
+    text-align: center;
+
+    margin: 70px auto 0;
+    position: static;
+}
+
+.link-feinman{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 48px;
+
+    line-height: 51px;
+    font-size:36px;
+    font-weight: normal;
+    text-decoration: none;
+
+}
+
+.img-feinman{
+    width:867px;
+    height:637px;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+
+}
+
+/*kaufman*/
+.kaufman{
+    background-color: #1f1f1f;
+    color: white;
+
+    position: relative;
+    overflow: hidden;
+
+    min-height: 700px;
+    height: 100%;
+
+}
+
+.kaufman-text{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    left: 0;
+}
+
+.section-title_theme_dark{
+    margin-top:90px;
+}
+
+.section-subtitle_theme_dark{
+    margin: 20px auto 0;
+}
+
+.table_theme_dark{
+    margin: 0 auto 90px;
+}
+
+.table__row_theme_dark{
+    margin-top: 80px;
+}
+
+.table__cell_theme_dark{
+    width: 200px;
+}
+
+.heading_theme_dark{
+    margin-bottom: 20px;
+}
+
+.kaufman-triangle{
+    width: 877px;
+    height: 877px;
+
+    position: absolute;
+    right: -210px;
+    top: 0;
+    z-index: 0;
+}
+
+/*footer*/
+.footer{
+    min-height: 350px;
+
+
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.columns{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 40px;
+    padding-top: 60px;
+}
+
+.columns__content_copyright{
+    width: 711px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.logo__place_footer{
+    display: block;
+    height: 35px;
+    width: 183px;
+    background-image:url("../images/logo_place_footer.svg");
+
+}
+
+.author{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: normal;
+}
+
+.columns__content_info {
+    flex-direction: column;
+}
+
+.columns__content_social{
+     flex-direction: column;
+}
+
+.column-heading{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.column-links{
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px 0 16px;
+}
+.column-links a{
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.social-icon{
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента
 .header__square-pic {
   height: 568px;
   width: 568px;
 }
-
-/* и элемента с модификатором вида ключ-значение */
+/* и элемента с модификатором вида ключ-значение
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
-}
+}*/
