@@ -268,7 +268,7 @@
 }
 
 
-.kaufman-triangle {
+.kaufman__triangle {
   width: 877px;
   height: 877px;
   position: absolute;
@@ -292,7 +292,7 @@
     display: flex;
     justify-content: space-between;
     min-height: 350px;
-    padding: 60px 40px;
+    padding: 60px 0 40px;
     margin: 0 auto;
 }
 
@@ -303,7 +303,7 @@
     justify-content: space-between;
 }
 
-.logo__place_footer{
+.logo_place_footer{
     display: block;
     height: 35px;
     width: 183px;
@@ -317,11 +317,11 @@
     font-weight: normal;
 }
 
-.footer__column__content_info {
+.footer__column_content_info {
     flex-direction: column;
 }
 
-.footer__column__content_social {
+.footer__column_content_social {
     flex-direction: column;
 }
 
