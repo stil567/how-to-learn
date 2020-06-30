@@ -1,0 +1,12 @@
+/*квадрат*/
+.header__square-pic {
+  position: absolute;
+  z-index: 0;
+  right: 0px;
+  top: 64px;
+  background-color: #2f80ed;
+  height: 568px;
+  width: 568px;
+  animation: rotation 20s infinite ease-in-out;
+}
+

@@ -1,0 +1,10 @@
+@import url(_place-header/logo_place_header.css);
+@import url(_place-footer/logo_place_footer.css);
+
+.logo{
+    width: 183px;
+}
+
+.logo:hover {
+    cursor: pointer;
+  }
