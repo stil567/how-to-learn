@@ -1,5 +1,5 @@
 .two-colummns__brief {
-  width: 175px;
+  max-width: 175px;
   margin: 0;
   text-decoration: none;
   line-height: 1.2;

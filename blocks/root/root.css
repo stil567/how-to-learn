@@ -1,6 +1,4 @@
-*,
-*:before,
-*:after {
+.root{
   box-sizing: border-box;
 }
 

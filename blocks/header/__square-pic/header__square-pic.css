@@ -1,7 +1,7 @@
 /*квадрат*/
 .header__square-pic {
   position: absolute;
-  z-index: 0;
+  z-index: -2;
   right: 0px;
   top: 64px;
   background-color: #2f80ed;
